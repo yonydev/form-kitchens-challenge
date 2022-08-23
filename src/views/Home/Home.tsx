@@ -4,9 +4,7 @@ import type { NextPage } from 'next';
 import data from '@/db/products.json';
 import { TCol, TProduct } from '@/types';
 
-import Table from './components/Table/Table';
-import SearchInput from './components/SearchInput';
-import EmptyState from './components/EmptyState';
+import { Table, SearchInput, EmptyState } from './components';
 
 const Home: NextPage = () => {
   const [foundProducts, setFoundProducts] = useState<TProduct['products'][]>(
